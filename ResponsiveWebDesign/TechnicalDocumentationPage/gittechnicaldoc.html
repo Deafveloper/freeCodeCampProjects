@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Documentation: Getting Started with Open Source on GitHub</title>
+    <link rel="stylesheet" href="/ResponsiveWebDesign/TechnicalDocumentationPage/git.css">
+</head>
+<body>
+    <nav id="navbar">
+        <header>Open Source on GitHub</header>
+        <a class="nav-link" href="#Introduction">Introduction</a>
+        <a class="nav-link" href="#Setting_Up_Git">Setting Up Git</a>
+        <a class="nav-link" href="#Forking_a_Repository">Forking a Repository</a>
+        <a class="nav-link" href="#Cloning_the_Repository">Cloning the Repository</a>
+        <a class="nav-link" href="#Creating_a_New_Branch">Creating a New Branch</a>
+        <a class="nav-link" href="#Making_Changes">Making Changes</a>
+        <a class="nav-link" href="#Pushing_Changes_and_Creating_a_Pull_Request">Pushing Changes and Creating a Pull Request</a>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="Introduction">
+            <header>Introduction</header>
+            <p>Welcome to the world of open source! This guide will help you get started with contributing to open source projects on GitHub. Whether you're a seasoned developer or a beginner, this documentation will provide you with the necessary steps to start your journey.</p>
+        </section>
+        <section class="main-section" id="Setting_Up_Git">
+            <header>Setting Up Git</header>
+            <p>Before you begin, make sure you have the following:</p>
+            <ul>
+                <li>A GitHub account. If you don't have one, <a href="https://github.com/join">sign up here</a>.</li>
+                <li>Basic understanding of Git and version control. You can learn more about Git <a href="https://git-scm.com/doc">here</a>.</li>
+                <li>A text editor (e.g., Visual Studio Code, Sublime Text).</li>
+            </ul>
+            <p>Install Git:</p>
+            <code>Download and install Git from <a href="https://git-scm.com/downloads">here</a>.</code>
+            <p>Configure Git:</p>
+            <code>
+                git config --global user.name "Your Name"<br>
+                git config --global user.email "your.email@example.com"
+            </code>
+        </section>
+        <section class="main-section" id="Forking_a_Repository">
+            <header>Forking a Repository</header>
+            <p>Find a Project:</p>
+            <ul>
+                <li>Browse GitHub for a project you’re interested in.</li>
+                <li>Start by exploring the <a href="https://github.com/explore">GitHub Explore</a> page.</li>
+            </ul>
+            <p>Fork the Repository:</p>
+            <code>
+                Go to the repository page.<br>
+                Click on the "Fork" button at the top right corner. This will create a copy of the repository in your GitHub account.
+            </code>
+        </section>
+        <section class="main-section" id="Cloning_the_Repository">
+            <header>Cloning the Repository</header>
+            <p>Clone the Forked Repository:</p>
+            <ul>
+                <li>In your GitHub account, navigate to the forked repository.</li>
+                <li>Click on the "Code" button and copy the URL.</li>
+                <li>Open your terminal and run the following command:</li>
+            </ul>
+            <code>git clone https://github.com/your-username/repository-name.git</code>
+        </section>
+        <section class="main-section" id="Creating_a_New_Branch">
+            <header>Creating a New Branch</header>
+            <p>Create and Switch to a New Branch:</p>
+            <ul>
+                <li>Navigate to the cloned repository directory:</li>
+                <li>cd repository-name</li>
+                <li>Create a new branch and switch to it:</li>
+            </ul>
+            <code>git checkout -b feature-branch</code>
+        </section>
+        <section class="main-section" id="Making_Changes">
+            <header>Making Changes</header>
+            <p>Make Your Changes:</p>
+            <ul>
+                <li>Open the project in your text editor.</li>
+                <li>Make the necessary changes or add new features.</li>
+            </ul>
+            <p>Stage Your Changes:</p>
+            <code>git add .</code>
+            <p>Commit Your Changes:</p>
+            <code>git commit -m "Description of changes"</code>
+        </section>
+        <section class="main-section" id="Pushing_Changes_and_Creating_a_Pull_Request">
+            <header>Pushing Changes and Creating a Pull Request</header>
+            <p>Push Your Changes:</p>
+            <code>git push origin feature-branch</code>
+            <p>Create a Pull Request:</p>
+            <ul>
+                <li>Navigate to the original repository on GitHub.</li>
+                <li>You will see a prompt to create a pull request from your new branch.</li>
+                <li>Click on "Compare & pull request".</li>
+                <li>Add a descriptive title and comment for your pull request.</li>
+                <li>Click "Create pull request".</li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>
