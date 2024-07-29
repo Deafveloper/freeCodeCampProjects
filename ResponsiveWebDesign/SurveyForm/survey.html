@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta>
+        <meta>
+        <title>Website Survey Form</title>
+        <link rel="stylesheet" href="/ResponsiveWebDesign/SurveyForm/survey.css">
+    </head>
+    <body>
+        <div class="form-box">
+        <h1 id="title">Website Survey Form</h1>
+        <p id="description" class="description">Thank you for taking the time to fill out this form.</p>
+
+        <form id="survey-form">
+            <fieldset>
+                
+                <label for="name" id="name-label">Name
+                    <input type="text" id="name" placeholder="Enter your Name" required />
+                </label>
+               <br>
+                <label for="email" id="email-label">Email
+                    <input type="email" id="email" placeholder="Enter your Email" required />
+                </label>
+                <br>
+               
+                <label for="number" id="number-label">Age 18+
+                    <input type="number" id="number" min="18" max="99" placeholder="18">
+                </label>
+            </fieldset>
+            <!-- select drop down id="dropdown" need two options -->
+            <fieldset>
+                <label>
+                    What are you looking for?
+                    <select id="dropdown">
+                        <option value="">Select One</option>
+                        <option value="1">Web Developer</option>
+                        <option value="2">Web Designer</option>
+                        <option value="3">Web Management</option>
+                        <option value="4">Website Revamp</option>
+                        <option value="5">Website Tutorial</option>
+                    </select>
+                </label>
+
+                <!-- Radio buttons with name attribute -->
+                <p>Do you have a website?</p>
+                <label>
+                    <input type="radio" id="own-website" name="own-website" value="yes"> Yes
+                </label>
+                <br>
+                <label>
+                    <input type="radio" id="own-website" name="own-website" value="no"> No
+                </label>
+                <br>
+                <label>
+                    <input type="radio" id="own-website" name="own-website" value="notsure"> Not Sure
+                </label>
+            </fieldset>
+               
+            <fieldset>
+                <p>Are you familiar with any of these? (check all that apply)</p>
+                <label>
+                    <input type="checkbox" id="website-vocab" value="text"> Web Hosting Service
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" id="website-vocab" value="text"> Domain
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" id="website-vocab" value="text"> SEO
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" id="website-vocab" value="text"> CMS
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" id="website-vocab" value="text"> SSL Certificate
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" id="website-vocab" value="text"> HTTPS/HTTP
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" id="website-vocab" value="text"> Landing Page
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" id="website-vocab" value="text"> UX
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" id="website-vocab" value="text"> UI
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" id="website-vocab" value="text"> API
+                </label>
+            </fieldset>
+<!-- Add the placeholder text in each input field that gives description or instructions-->
+            <fieldset>
+                <p>Do you have any Questions?</p>
+                <label>
+                    <textarea id="QA" rows="3" cols="30" placeholder="How long does it take to setup a website?"></textarea>
+                </label>
+            </fieldset>
+            <input type="submit" id="submit" value="submit" />
+        </form>
+        </div>
+    </body>
+</html>
